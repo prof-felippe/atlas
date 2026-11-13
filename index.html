@@ -783,7 +783,7 @@ footer.foot { border-top: 1px solid var(--line); color: var(--muted); font-size:
           <div class="side-note">
             <h4>Antes de começar</h4>
             <p>O quiz sorteia 10 de 52 perguntas sobre biomas, clima, relevo, hidrografia, população, cartografia, projeções, solos e meio ambiente.</p>
-            <p>Depois de cada resposta aparece uma explicação. Errou? Leia e tente de novo. Os resumos estão em <a href="#conteudos">Conteúdos</a>.</p>
+            <p>Depois de cada resposta aparece uma explicação. Errou? Leia e tente de novo. Os resumos estão em <a href="#aprender">Para aprender</a>.</p>
           </div>
         </div>
       </div>
@@ -845,7 +845,7 @@ footer.foot { border-top: 1px solid var(--line); color: var(--muted); font-size:
                 <li>As pessoas com 65 anos ou mais já são cerca de 11% da população.</li>
                 <li>Com menos nascimentos, a base da pirâmide etária fica mais estreita e o topo, mais largo.</li>
               </ul>
-              <p><a class="play-link" href="jogos/piramides.html">Jogar Que país é este? →</a></p>
+              <p><a class="play-link" href="piramides.html">Jogar Que país é este? →</a></p>
               <p class="more">Saiba mais na Wikipédia: <a class="wiki" href="https://pt.wikipedia.org/wiki/Instituto_Brasileiro_de_Geografia_e_Estatística" target="_blank" rel="noopener">IBGE</a></p>
             </div>
             <dl class="terms">
@@ -902,7 +902,7 @@ footer.foot { border-top: 1px solid var(--line); color: var(--muted); font-size:
                 <li><strong>Subtropical</strong>: estações bem definidas e invernos frios (Sul).</li>
               </ul>
               <p>As <a class="wiki" href="https://pt.wikipedia.org/wiki/Massa_de_ar" target="_blank" rel="noopener">massas de ar</a> trazem calor, frio, chuva ou seca. A umidade da floresta amazônica viaja com os ventos, nos chamados <a class="wiki" href="https://pt.wikipedia.org/wiki/Rios_voadores" target="_blank" rel="noopener">rios voadores</a>, e ajuda a formar chuvas no Centro-Oeste e no Sudeste. Fenômenos como o <a class="wiki" href="https://pt.wikipedia.org/wiki/El_Niño" target="_blank" rel="noopener">El Niño</a> mudam esse padrão e podem causar secas no Norte e chuvas fortes no Sul.</p>
-              <p><a class="play-link" href="jogos/climograma.html">Jogar Climograma Quiz →</a></p>
+              <p><a class="play-link" href="climograma.html">Jogar Climograma Quiz →</a></p>
               <p class="more">Saiba mais na Wikipédia: <a class="wiki" href="https://pt.wikipedia.org/wiki/Clima_do_Brasil" target="_blank" rel="noopener">Clima do Brasil</a> · <a class="wiki" href="https://pt.wikipedia.org/wiki/Classificação_climática_de_Köppen-Geiger" target="_blank" rel="noopener">Classificação de Köppen</a></p>
             </div>
             <div class="terms"><figure class="illo"><svg data-illo="zones" viewBox="0 0 320 200" role="img" aria-label="Globo com as zonas climáticas: polares, temperadas e tropical, e as linhas do Equador, trópicos e círculos polares"></svg><figcaption>Zonas climáticas da Terra</figcaption></figure><dl class="terms">
@@ -2242,16 +2242,16 @@ footer.foot { border-top: 1px solid var(--line); color: var(--muted); font-size:
     quiz: { kind: "game", panel: "panel-quiz", title: "Quiz de Geografia", type: "Jogo rápido", meta: ["10 perguntas", "banco de 52"], best: "quiz",
       desc: "Biomas, clima, relevo, hidrografia, população, projeções, solos e meio ambiente. Cada resposta vem com uma explicação.", side: [["Habilidades", "revisão geral"], ["Formato", "múltipla escolha"]],
       art: function () { return artFit('[data-illo="compass"]', "#1a1f2e", [172, 10, 160, 160]); } },
-    linhas: { kind: "page", href: "jogos/linhas-na-floresta.html", title: "Linhas na Floresta", type: "Livro-jogo", meta: ["6º ano", "16 finais", "Acre"], badge: "AVENTURA",
+    linhas: { kind: "page", href: "linhas-na-floresta.html", title: "Linhas na Floresta", type: "Livro-jogo", meta: ["6º ano", "16 finais", "Acre"], badge: "AVENTURA",
       desc: "Três da manhã, dois círculos perfeitos numa imagem de satélite e um helicóptero que chegou primeiro. Com o Dr. Phillip, use coordenadas, escala, rios, relevo e bússola para proteger um geoglifo no Acre.",
       side: [["Habilidades", "coordenadas, escala, hidrografia, relevo, orientação, tempo e clima"], ["Extras", "relógio da expedição, figurinhas, conquistas, som e resultado para o professor"]],
-      art: function () { return artImg("jogos/linhas-capa.png"); } },
+      art: function () { return artImg("linhas-capa.png"); } },
     batalha: { kind: "external", href: "https://batalha-pelos-biomas-philipp.steadyfrog4.chatgpt.site", title: "A Batalha pelos Biomas", type: "Aventura", meta: ["Biomas", "abre em outro site"],
       desc: "Guie uma equipe de jovens cientistas em missões pelos biomas brasileiros, com caderno de campo e mochila.", side: [["Habilidades", "biomas brasileiros"], ["Atenção", "o jogo fica em outro site e abre em uma nova aba"]],
       art: function () { return artSlice('[data-biome="pantanal"]'); } },
-    climograma: { kind: "page", href: "jogos/climograma.html", title: "Climograma Quiz", type: "Leitura de gráficos", meta: ["3 níveis", "105 cidades", "cronômetro"],
+    climograma: { kind: "page", href: "climograma.html", title: "Climograma Quiz", type: "Leitura de gráficos", meta: ["3 níveis", "105 cidades", "cronômetro"],
       desc: "Leia as barras de chuva e a linha de temperatura e descubra de qual das 105 cidades é o clima. Quando você erra, o jogo explica por que não era aquela cidade.", side: [["Habilidades", "climogramas e classificação de Köppen-Geiger"], ["Extras", "dicas com fotos, diário de campo e quadro de honra"]], art: artClimo },
-    piramides: { kind: "page", href: "jogos/piramides.html", title: "Que país é este?", type: "Leitura de gráficos", meta: ["85 países", "modo aula", "laboratório"],
+    piramides: { kind: "page", href: "piramides.html", title: "Que país é este?", type: "Leitura de gráficos", meta: ["85 países", "modo aula", "laboratório"],
       desc: "Observe a pirâmide etária e descubra o país. Base larga, topo largo, migrações: cada forma conta uma história.", side: [["Habilidades", "pirâmides etárias e transição demográfica"], ["Extras", "modo aula para o telão, laboratório de 1950 a 2100 e passaporte de selos"], ["Dados", "ONU, World Population Prospects 2024"]], art: function () { return artPyramid(true); } },
     cartografia: { kind: "doc", title: "Cartografia", type: "Aula", meta: ["escala", "coordenadas", "fusos"], art: function () { return artFit('[data-illo="compass"]', "#14262c", [168, 8, 164, 164]); } },
     projecoes: { kind: "doc", title: "Projeções cartográficas", type: "Aula", meta: ["Mercator", "Peters", "Robinson"], badge: "NOVO", art: function () { return artFit('[data-illo="proj"]', "#14262c", [6, 30, 308, 113]); } },
@@ -2335,7 +2335,7 @@ footer.foot { border-top: 1px solid var(--line); color: var(--muted); font-size:
 
   /* Vitrine com três destaques que se alternam */
   var FEAT = [
-    { id: "linhas", art: function () { return artImg("jogos/linhas-capa.png"); } },
+    { id: "linhas", art: function () { return artImg("linhas-capa.png"); } },
     { id: "biomas", art: POSTER.biomas },
     { id: "fusos", art: POSTER.fusos }
   ];

@@ -1,50 +1,42 @@
 ATLAS DO PROF. FELIPPE — pacote pronto para publicar
 ====================================================
 
-Conteúdo
---------
-index.html                     página principal (catálogo, jogos rápidos e aulas)
-jogos/climograma.html          Climograma Quiz (fotos já embutidas no arquivo)
-jogos/piramides.html           Que país é este? (pirâmides etárias)
-jogos/linhas-na-floresta.html  Linhas na Floresta (livro-jogo, funciona offline)
-jogos/linhas-capa.png          capa usada na vitrine
-jogos/CREDITOS-DAS-FOTOS.txt   créditos das fotos do Climograma (Wikimedia Commons)
-.nojekyll                      arquivo vazio necessário no GitHub Pages
+Todos os arquivos ficam na MESMA pasta (não há subpastas):
 
-Mantenha a estrutura de pastas como está: a página principal abre os jogos
-em "jogos/" e cada jogo volta para "../index.html".
+index.html                página principal (catálogo, jogos rápidos e aulas)
+climograma.html           Climograma Quiz (fotos já embutidas no arquivo)
+piramides.html            Que país é este? (pirâmides etárias)
+linhas-na-floresta.html   Linhas na Floresta (livro-jogo, funciona offline)
+linhas-capa.png           capa usada na vitrine
+CREDITOS-DAS-FOTOS.txt    créditos das fotos do Climograma (Wikimedia Commons)
+.nojekyll                 arquivo vazio para o GitHub Pages (opcional)
 
-
-OPÇÃO 1 — Netlify Drop (mais rápido, sem instalar nada)
--------------------------------------------------------
-1. Descompacte o .zip.
-2. Acesse https://app.netlify.com/drop e entre com uma conta gratuita.
-3. Arraste a PASTA descompactada inteira para a página.
-4. Em segundos o site recebe um endereço (ex.: nome-aleatorio.netlify.app).
-   Em "Site configuration > Change site name" você pode trocar para
-   algo como atlas-prof-felippe.netlify.app.
-Para atualizar depois: em "Deploys", arraste a pasta nova.
+IMPORTANTE: envie todos juntos, lado a lado. A página principal abre os
+jogos pelo nome do arquivo e cada jogo volta para "index.html".
+Não renomeie os arquivos.
 
 
-OPÇÃO 2 — GitHub Pages
-----------------------
-1. Crie uma conta em https://github.com e um repositório público
-   (ex.: atlas-geografia).
-2. No repositório: "Add file > Upload files" e arraste TODO o conteúdo
-   da pasta (index.html, a pasta jogos e o .nojekyll).
-   Observação: o linhas-na-floresta.html tem ~9 MB; o upload pelo
-   navegador aceita até 25 MB por arquivo, então funciona.
-3. Clique em "Commit changes".
-4. Vá em Settings > Pages > "Deploy from a branch", escolha "main" e
-   pasta "/ (root)", e salve.
-5. Em 1–2 minutos o site estará em
-   https://SEU-USUARIO.github.io/atlas-geografia/
+PUBLICAR PELO GITHUB PAGES
+--------------------------
+1. Em https://github.com clique em "+ > New repository".
+   Nome: atlas-geografia · marque Public · "Create repository".
+2. Clique em "uploading an existing file".
+3. Selecione TODOS os arquivos desta pasta (Ctrl+A) e arraste para a
+   página (ou use "choose your files" e selecione todos).
+4. Clique em "Commit changes".
+5. Settings > Pages > Source: "Deploy from a branch" > main > / (root) > Save.
+6. Em 1–2 minutos: https://SEU-USUARIO.github.io/atlas-geografia/
+
+Para conferir: na página inicial do repositório, o index.html e os
+jogos devem aparecer listados lado a lado (nenhum dentro de outra pasta).
+
+Para atualizar: "Add file > Upload files" e envie os arquivos novos com
+o mesmo nome; o GitHub substitui os antigos.
 
 
-OPÇÃO 3 — Google Sites ou Classroom
------------------------------------
-Publique pelo Netlify ou GitHub Pages e cole o link no Google Sites
-(Inserir > Incorporar > URL) ou como material no Classroom.
+PUBLICAR PELO NETLIFY DROP
+--------------------------
+Acesse https://app.netlify.com/drop e arraste esta pasta inteira.
 
 
 Observações
@@ -53,4 +45,3 @@ Observações
 - O ranking compartilhado do Climograma só funciona dentro do Claude;
   fora dele o jogo usa automaticamente o ranking local.
 - "A Batalha pelos Biomas" abre em outro site (link externo).
-- As fontes vêm do Google Fonts; sem internet, o site usa fontes do sistema.
