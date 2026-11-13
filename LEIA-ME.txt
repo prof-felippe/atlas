@@ -1,0 +1,56 @@
+ATLAS DO PROF. FELIPPE — pacote pronto para publicar
+====================================================
+
+Conteúdo
+--------
+index.html                     página principal (catálogo, jogos rápidos e aulas)
+jogos/climograma.html          Climograma Quiz (fotos já embutidas no arquivo)
+jogos/piramides.html           Que país é este? (pirâmides etárias)
+jogos/linhas-na-floresta.html  Linhas na Floresta (livro-jogo, funciona offline)
+jogos/linhas-capa.png          capa usada na vitrine
+jogos/CREDITOS-DAS-FOTOS.txt   créditos das fotos do Climograma (Wikimedia Commons)
+.nojekyll                      arquivo vazio necessário no GitHub Pages
+
+Mantenha a estrutura de pastas como está: a página principal abre os jogos
+em "jogos/" e cada jogo volta para "../index.html".
+
+
+OPÇÃO 1 — Netlify Drop (mais rápido, sem instalar nada)
+-------------------------------------------------------
+1. Descompacte o .zip.
+2. Acesse https://app.netlify.com/drop e entre com uma conta gratuita.
+3. Arraste a PASTA descompactada inteira para a página.
+4. Em segundos o site recebe um endereço (ex.: nome-aleatorio.netlify.app).
+   Em "Site configuration > Change site name" você pode trocar para
+   algo como atlas-prof-felippe.netlify.app.
+Para atualizar depois: em "Deploys", arraste a pasta nova.
+
+
+OPÇÃO 2 — GitHub Pages
+----------------------
+1. Crie uma conta em https://github.com e um repositório público
+   (ex.: atlas-geografia).
+2. No repositório: "Add file > Upload files" e arraste TODO o conteúdo
+   da pasta (index.html, a pasta jogos e o .nojekyll).
+   Observação: o linhas-na-floresta.html tem ~9 MB; o upload pelo
+   navegador aceita até 25 MB por arquivo, então funciona.
+3. Clique em "Commit changes".
+4. Vá em Settings > Pages > "Deploy from a branch", escolha "main" e
+   pasta "/ (root)", e salve.
+5. Em 1–2 minutos o site estará em
+   https://SEU-USUARIO.github.io/atlas-geografia/
+
+
+OPÇÃO 3 — Google Sites ou Classroom
+-----------------------------------
+Publique pelo Netlify ou GitHub Pages e cole o link no Google Sites
+(Inserir > Incorporar > URL) ou como material no Classroom.
+
+
+Observações
+-----------
+- Recordes e progresso ficam salvos no navegador de cada aluno.
+- O ranking compartilhado do Climograma só funciona dentro do Claude;
+  fora dele o jogo usa automaticamente o ranking local.
+- "A Batalha pelos Biomas" abre em outro site (link externo).
+- As fontes vêm do Google Fonts; sem internet, o site usa fontes do sistema.
